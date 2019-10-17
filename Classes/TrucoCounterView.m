@@ -85,7 +85,7 @@
 }
 - (UIImage *) diagonalSprite{
 	if (diagonalSprite == nil){
-		diagonalSprite = [UIImage imageNamed:@"diagonal_pointSprite.png"];		
+		diagonalSprite = [[UIImage imageNamed:@"diagonal_pointSprite.png"] retain];
 	}
 	return diagonalSprite;
 }
